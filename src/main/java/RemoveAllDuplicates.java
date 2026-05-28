@@ -1,6 +1,5 @@
 import java.util.stream.Collectors;
 
-
 public class RemoveAllDuplicates {
 
     public static void main(String[] args) {
@@ -9,6 +8,6 @@ public class RemoveAllDuplicates {
         String  result=str.chars().distinct()
                         .mapToObj(c->String.valueOf((char)c)).collect(Collectors.joining());
 
-        System.out.println(result); // Output: "abcdefgh"
+        System.out.println(result);
     }
 }
